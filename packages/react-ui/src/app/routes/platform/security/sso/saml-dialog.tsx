@@ -127,7 +127,7 @@ Please check the following documentation: [SAML SSO](https://activepieces.com/do
 \`\`\`
 **Audience URI (SP Entity ID)**:
 \`\`\`text
-Activepieces
+OPAX
 \`\`\`
 `,
                 { samlAcs: samlAcs ?? '' },

@@ -47,7 +47,9 @@ export const PageHeader = ({
           <div>
             <div className="flex items-center gap-2">
               {typeof title === 'string' ? (
-                <h1 className="text-base font-normal">{title}</h1>
+                <h1 className="text-lg font-semibold tracking-tight">
+                  {title}
+                </h1>
               ) : (
                 title
               )}

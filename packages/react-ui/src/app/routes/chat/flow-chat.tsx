@@ -95,8 +95,7 @@ export function FlowChat({
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [imageDialogOpen, setImageDialogOpen] = useState(false);
 
-  const botName =
-    chatUI?.props.botName ?? `${chatUI?.platformName ?? 'Activepieces'} Bot`;
+  const botName = chatUI?.props.botName ?? `${chatUI?.platformName ?? 'OPAX'} Bot`;
 
   const { mutate: sendMessage, isPending: isSending } = useMutation({
     mutationFn: async ({

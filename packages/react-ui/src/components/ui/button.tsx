@@ -8,27 +8,27 @@ import { Shortcut } from './shortcut';
 import { LoadingSpinner } from './spinner';
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold tracking-tight transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-sm",
   {
     variants: {
       variant: {
         default:
-          'bg-primary stroke-background text-primary-foreground enabled:hover:bg-primary/90',
+          'bg-primary text-primary-foreground shadow-[0_12px_40px_-20px_hsl(var(--primary))] border border-primary/40 enabled:hover:bg-primary/90 enabled:active:translate-y-[1px]',
         basic:
           'text-primary font-medium underline-offset-4 enabled:hover:bg-accent',
         secondary:
-          'text-secondary-foreground bg-secondary enabled:hover:bg-secondary/80 enabled:hover:text-secondary-foreground',
+          'text-secondary-foreground bg-secondary/80 border border-border enabled:hover:bg-secondary',
         destructive:
           'bg-destructive text-background enabled:hover:bg-destructive/90',
         outline:
-          'border-input bg-background enabled:hover:bg-accent enabled:hover:text-accent-foreground border',
-        accent: 'bg-accent text-accent-foreground enabled:hover:bg-accent/80',
+          'border-primary/40 bg-background/40 text-foreground enabled:hover:bg-accent enabled:hover:text-accent-foreground border',
+        accent: 'bg-accent text-accent-foreground border border-accent/50 enabled:hover:bg-accent/80',
         ghost:
-          'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
+          'hover:bg-accent/40 hover:text-accent-foreground dark:hover:bg-accent/50',
         link: 'text-primary underline-offset-4 hover:underline',
         transparent: 'text-primary enabled:hover:bg-transparent',
         'outline-primary':
-          'text-primary font-medium enabled:hover:bg-primary/10 enabled:hover:border-primary enabled:hover:font-semibold',
+          'text-primary font-medium border border-primary/30 enabled:hover:bg-primary/10 enabled:hover:border-primary enabled:hover:font-semibold',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',

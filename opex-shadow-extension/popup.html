@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opex Shadow Recorder</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 12px; width: 320px; }
+    h1 { font-size: 16px; margin: 0 0 8px 0; }
+    button { margin-right: 8px; padding: 6px 12px; }
+    #status { margin: 8px 0; font-weight: bold; }
+    textarea { width: 100%; min-height: 160px; }
+  </style>
+</head>
+<body>
+  <h1>Shadow Recorder</h1>
+  <div>
+    <button id="record">Record</button>
+    <button id="stop">Stop</button>
+  </div>
+  <div id="status">Idle</div>
+  <label for="output">Recorded steps JSON</label>
+  <textarea id="output" readonly></textarea>
+  <script src="popup.js"></script>
+</body>
+</html>
