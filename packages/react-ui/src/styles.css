@@ -12,28 +12,28 @@
   }
 
 :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    
-    --secondary: 0 0% 0%;
-    --secondary-foreground: 0 0% 100%;
+    --background: 222 24% 7.5%;
+    --foreground: 210 28% 96%;
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --secondary: 223 20% 14%;
+    --secondary-foreground: 210 24% 96%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --muted: 222 18% 13%;
+    --muted-foreground: 216 15% 68%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --accent: 226 28% 12%;
+    --accent-foreground: 210 28% 96%;
 
-    --ring: 240 5.9% 10%;
-    --radius: 0.625rem;
+    --border: 221 20% 18%;
+    --input: 221 20% 18%;
 
-    --primary-100: 257 75% 85%;
-    --primary: 257 74% 57%;
-    --primary-300: 257 74% 25%;
-    --primary-foreground: 210 20% 98%;
+    --ring: 192 95% 60%;
+    --radius: 0.75rem;
+
+    --primary-100: 191 90% 78%;
+    --primary: 191 95% 58%;
+    --primary-300: 191 92% 34%;
+    --primary-foreground: 210 30% 96%;
 
 
     --success-100: 148 48% 80%;
@@ -43,12 +43,12 @@
     --destructive-100: 0 84.2% 90%;
     --destructive: 0 84.2% 60.2%;
     --destructive-300: 0 84.2% 40%;
-    
+
     --warning-100: 51.72, 93.55%, 93.92%;
     --warning: 47 96% 53%;
     --warning-300: 28 80% 31%;
 
-    --add-button-shadow: 0px 0px 0px 6px hsl(var(--primary-100));
+    --add-button-shadow: 0px 0px 0px 6px hsl(var(--primary-100)/0.55);
 
     --light-blue: 214 16% 70%;
     --chart-1: 12 76% 61%;
@@ -56,36 +56,36 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    
-    --sidebar-background: 0 0% 98.5%;
-    --sidebar-foreground: 228 6.49% 15.1%;
-    --sidebar-primary: 257 74% 57%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-    --sidebar-active: 0 0% 90%;
-    --sidebar-progress: 0 0% 50%;
+
+    --sidebar-background: 222 24% 9%;
+    --sidebar-foreground: 210 26% 92%;
+    --sidebar-primary: 191 95% 58%;
+    --sidebar-primary-foreground: 222 24% 9%;
+    --sidebar-accent: 226 24% 14%;
+    --sidebar-accent-foreground: 210 28% 96%;
+    --sidebar-border: 221 20% 18%;
+    --sidebar-ring: 191 95% 58%;
+    --sidebar-active: 223 20% 16%;
+    --sidebar-progress: 191 85% 52%;
   }
 
 .dark {
-  --background: 210 15% 12%;
-  --foreground: 210 30% 90%;
+  --background: 222 24% 6%;
+  --foreground: 210 32% 96%;
 
-  --muted: 210 15% 28%;
-  --muted-foreground: 210 10% 60%;
+  --muted: 223 22% 12%;
+  --muted-foreground: 215 18% 72%;
 
-  --secondary: 0 0% 100%;
-  --secondary-foreground: 0 0% 0%;
+  --secondary: 222 18% 14%;
+  --secondary-foreground: 210 30% 96%;
 
-  --accent: 210 35% 25%;
-  --accent-foreground: 210 90% 95%;
+  --accent: 228 26% 16%;
+  --accent-foreground: 210 32% 96%;
 
-  --primary-100: 210 80% 40%;
-  --primary: 210 90% 50%;
-  --primary-300: 210 100% 85%;
-  --primary-foreground: 210 90% 98%;
+  --primary-100: 191 96% 80%;
+  --primary: 191 94% 63%;
+  --primary-300: 191 90% 40%;
+  --primary-foreground: 222 24% 6%;
 
   --success-100: 140 60% 40%;
   --success: 140 80% 50%;
@@ -99,13 +99,13 @@
   --warning: 40 100% 45%;
   --warning-300: 40 100% 30%;
 
-  --border: 210 15% 25%;
-  --input: 210 15% 22%;
+  --border: 221 20% 20%;
+  --input: 221 20% 20%;
 
-  --ring: 210 90% 60%;
-  --radius: 0.625rem;
+  --ring: 191 95% 65%;
+  --radius: 0.75rem;
 
-  --add-button-shadow: 0 0 0 6px hsl(var(--primary-100) / 0.4);
+  --add-button-shadow: 0 0 0 6px hsl(var(--primary-100) / 0.35);
 
   --chart-1: 210 85% 55%;
   --chart-2: 160 80% 50%;
@@ -113,16 +113,16 @@
   --chart-4: 280 75% 65%;
   --chart-5: 340 80% 60%;
 
-  --sidebar-background: 210 15% 10%;
-  --sidebar-foreground: 210 20% 85%;
-  --sidebar-primary: 210 85% 65%;
-  --sidebar-primary-foreground: 210 90% 98%;
-  --sidebar-accent: 210 25% 18%;
-  --sidebar-accent-foreground: 210 30% 90%;
-  --sidebar-border: 210 15% 22%;
-  --sidebar-ring: 210 90% 70%;
-  --sidebar-active: 210 15% 25%;
-  --sidebar-progress: 210 15% 40%;
+  --sidebar-background: 222 24% 7%;
+  --sidebar-foreground: 210 30% 92%;
+  --sidebar-primary: 191 95% 63%;
+  --sidebar-primary-foreground: 222 24% 7%;
+  --sidebar-accent: 226 24% 13%;
+  --sidebar-accent-foreground: 210 32% 96%;
+  --sidebar-border: 221 20% 20%;
+  --sidebar-ring: 191 95% 63%;
+  --sidebar-active: 223 20% 16%;
+  --sidebar-progress: 191 85% 55%;
 }
 
 
@@ -136,6 +136,8 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-family: 'Inter', 'Space Grotesk', 'SF Pro Display', system-ui,
+      -apple-system, sans-serif;
   }
 }
 

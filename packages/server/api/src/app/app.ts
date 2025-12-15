@@ -71,6 +71,7 @@ import { communityPiecesModule } from './pieces/community-piece-module'
 import { pieceModule } from './pieces/metadata/piece-metadata-controller'
 import { pieceMetadataService } from './pieces/metadata/piece-metadata-service'
 import { pieceSyncService } from './pieces/piece-sync-service'
+import { shadowModule } from './shadow/shadow.module'
 import { tagsModule } from './pieces/tags/tags-module'
 import { platformModule } from './platform/platform.module'
 import { projectHooks } from './project/project-hooks'
@@ -196,6 +197,7 @@ export const setupApp = async (app: FastifyInstance): Promise<FastifyInstance> =
     await app.register(triggerModule)
     await app.register(platformModule)
     await app.register(humanInputModule)
+    await app.register(shadowModule)
     await app.register(tagsModule)
     await app.register(mcpServerModule)
     await app.register(platformUserModule)
